@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Pure Bronte</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+
+
+
+
+    <!--Font Awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lora&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="logo2">
+            <a href="index.html">
+                <h1>Pure Bronte</h1>
+            </a>
+
+        </div>
+        <navbar>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Pure Bronte</h1>
+                </a>
+
+            </div>
+
+            <div class="navbar_menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#">ONLINE SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+
+            <div class="sns_icons">
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square" style="color: white;"></i></a></li>
+                </ul>
+            </div>
+        </navbar>
+
+        <!--スマホサイズの時のみ表示　ハンバーガーメニュー-->
+        <div class="icon_wrapper">
+            <div class="icon_item line1"></div>
+            <div class="icon_item line2"></div>
+            <div class="icon_item line3"></div>
+        </div>
+
+
+        <div class="discription">
+            <p class="first">THE PASSIONATE PURSUIT OF</p>
+            <p class="second">EXCEPTIONAL COFFEE</p>
+        </div>
+
+        <div class="menu_container">
+            <div class="menu">
+                <a href="menu.html">
+                    <h2>CHECK OUR MENU</h2>
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <h2>BUY COFFEE</h2>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="slider">
+            <div class="img01"></div>
+            <div class="img02"></div>
+            <div class="img03"></div>
+            <div class="img04"></div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!--Java Script-->
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script>
+    $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speed: 1500,
+    fade: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+});
+
+    
+    </script>
+
+</body>
+
+</html>

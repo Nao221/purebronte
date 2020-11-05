@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    z-index: -2;
+    background-image: url(../images/contact_images/back_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+}
+
+
+
+
+
+navbar {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.logo {
+    flex: 1;
+
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+}
+
+.logo a:hover {
+    color: darkcyan;
+}
+
+.logo2{
+    display: none;
+}
+
+
+.navbar_menu {
+    flex: 1;
+}
+
+.navbar_menu ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+
+}
+
+.navbar_menu ul li {
+    list-style: none;
+
+}
+
+.navbar_menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar_menu ul li a:hover {
+    color: darkcyan;
+}
+
+
+.sns_icons {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: -2vw;
+    display: none;
+
+}
+
+.sns_icons li {
+    font-size: 2vw;
+    transition: all 0.5s ease;
+    padding-left: 5px;
+
+}
+
+.sns_icons li:hover {
+
+    transform: scale(1.1);
+}
+
+.main_img {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    z-index: 100;
+    animation: apper 2s ease;
+}
+
+
+.text {
+    text-align: center;
+    margin: 10vh;
+}
+
+.text h1 {
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+.popUp{
+    width: 70%;
+    margin: 0 auto;
+    color: tomato;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+.popUp h1{
+    text-align: center;
+}
+
+.contact_form {
+    margin-top: 1vh;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.name_form {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    border: 0.5px solid gray;
+    margin-bottom: 30px;
+}
+
+
+
+.name {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.first_name {
+    width: 50%;
+    height: 50%;
+    border-top: 0.5px solid black;
+    border-right: 0.5px solid black;
+}
+
+.last_name {
+    width: 50%;
+    height: 50%;
+    border-top: 0.5px solid black;
+
+}
+
+.first_name input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+}
+
+.last_name input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+
+}
+
+span{
+    color: orangered;
+}
+.mail_form {
+
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    border: 0.5px solid gray;
+    margin-bottom: 30px;
+}
+
+.mail {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.mail_input {
+    width: 100%;
+    height: 50%;
+    border-top: 0.5px solid black;
+}
+
+.mail_input input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+
+}
+
+#text{
+    display: block;
+    text-align: center;
+    margin-top: -10px;
+    font-style: italic;
+}
+
+
+
+.message_form {
+
+    width: 70%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5px solid gray;
+}
+
+
+
+
+.message {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.message_input {
+    width: 100%;
+    height: 70%;
+    border-top: 0.5px solid black;
+}
+
+.message_input textarea {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+
+}
+
+
+
+
+
+
+
+.submit_button {
+    background-color: tomato;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.submit_button input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+
+}
+
+
+.submit_button:hover {
+    background-color: darkred;
+
+}
+
+@keyframes back{
+    0%{
+        width: 100vw;
+        opacity: 0;
+    }
+    100%{
+        width: 65vw;
+        opacity: 1;
+    }
+}
+
+@keyframes apper{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .main {
+        position: relative;
+    }
+
+
+
+    .icon_wrapper {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .icon_item {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .show-animate .line1 {
+        transform: translateY(5px) rotate(-45deg);
+    }
+
+    .show-animate .line2 {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    .show-animate .line3 {
+        transform: translateY(-10px) rotate(45deg);
+    }
+
+
+    navbar {
+        position: absolute;
+        top: 0%;
+        right: -50%;
+        width: 30vw;
+        height: 100vh;
+        display: flex;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .navbar_menu {
+        width: 100%;
+        height: 70%;
+        margin-top: 100px;
+
+
+    }
+    
+    .navbar_menu ul{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar_menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5vw;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Lora', serif;
+
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+       .logo2{
+        display: block;
+        position: absolute;
+        top: 3%;
+        left: 5%;
+        z-index: 10;
+    }
+    
+    .logo2 a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        
+    }
+
+    .sns_icons {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-top: auto;
+
+    }
+
+    .sns_icons li {
+        font-size: 3vw;
+    }
+
+    .contact_form {
+        margin-top: 30px;
+        max-width: 500px;
+    }
+
+    .text {
+        text-align: center;
+        margin: 5%;
+
+
+    }
+
+
+    .name_form {
+        width: 70%;
+        height: 150px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 50px;
+        border: 0.5px solid gray;
+        margin-bottom: 30px;
+
+    }
+
+
+
+    .name {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+    }
+
+    .first_name {
+        width: 100%;
+        height: 30%;
+        border-top: 0.5px solid gray;
+        border-right: none;
+
+
+    }
+
+    .last_name {
+        width: 100%;
+        height: 30%;
+        border-top: 0.5px solid black;
+
+    }
+
+    .first_name input {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Lora', serif;
+    }
+
+    .last_name input {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Lora', serif;
+
+    }
+    
+ 

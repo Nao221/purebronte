@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>contact form</title>
+    <meta name="Author" content="" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lora&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="logo2">
+            <a href="index.html">
+                <h1>Pure Bronte</h1>
+            </a>
+        </div>
+
+        <navbar>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Pure Bronte</h1>
+                </a>
+
+            </div>
+
+            <div class="navbar_menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#">ONLINE SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+
+
+        </navbar>
+        <!--スマホサイズの時のみ表示　ハンバーガーメニュー-->
+
+        <div class="icon_wrapper">
+            <div class="icon_item line1"></div>
+            <div class="icon_item line2"></div>
+            <div class="icon_item line3"></div>
+        </div>
+
+        <div class="main_img">
+
+        </div>
+
+        <main>
+
+            <div class="text">
+                <h1>CONTACT</h1>
+            </div>
+
+            <div class="contact_form">
+                <form action="insert.php" method="post" id="form">
+                    <div class="name_form">
+                        <div class="name">
+                            <label>TELL US YOUR NAME<span>*</span></label>
+                        </div>
+
+                        <div class="first_name">
+                            <input type="text" name="first_name" placeholder="First Name" />
+                        </div>
+                        <div class="last_name">
+                            <input type="text" name="last_name" placeholder="Last Name" />
+                        </div>
+                    </div>
+
+                    <div class="mail_form">
+                        <div class="mail">
+                            <label>ENTER YOUR EMAIL<span>*</span></label>
+                        </div>
+
+                        <div class="mail_input">
+                            <input type="text" name="mail" id="mail" onkeydown="validation()" />
+                            <span id="text"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="message_form">
+                        <div class="message">
+                            <label>MESSAGE<span>*</span></label>
+                        </div>
+
+                        <div class="message_input">
+                            <textarea name="message"></textarea>
+                        </div>
+
+                        <div class="submit_button">
+                            <input type="submit" name="submit" value="SEND" />
+                        </div>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+        </main>
+    </div>
+
+
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!--Java Script-->
+    <script src="./js/header.js"></script>
+
+
+    <script type="text/javascript">
+        function validation() {
+            var form = document.getElementById('form');
+            var mail = document.getElementById('mail').value;
+            var text = document.getElementById('text');
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (mail.match(pattern)) {
+                form.classList.add('valid');
+                form.classList.remove('invalid');
+                text.innerHTML = "Your Email Address Is Valid.";
+                text.style.color = "green";
+            } else {
+                form.classList.remove('valid');
+                form.classList.add('invalid');
+                text.innerHTML = "Please Enter Valid Email Address";
+                text.style.color = "red";
+            }
+
+            if (mail == "") {
+                form.classList.remove('valid');
+                form.classList.remove('invalid');
+                text.innerHTML = "";
+                text.style.color = "red";
+            }
+        }
+    </script>
+</body></html>
